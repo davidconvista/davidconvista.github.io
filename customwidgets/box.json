@@ -50,7 +50,7 @@
         "bgcolor": {
 			"type": "string",
 			"description": "Background Color info",
-			"default": "#3498db"
+			"default": "#123123"
         },
 		"width": {
 			"type": "integer",
@@ -74,8 +74,14 @@
 					"name": "newInfo",
 					"type": "string",
 					"description": "Gauge info"
-				},
-				{
+				}				
+			],
+			"body": "this.value = newValue; this.info = newInfo;"
+        },
+        "setColors": {
+            "description": "Sets the Gauge colors.",
+            "parameters":[
+                {
 					"name": "newColor",
 					"type": "string",
 					"description": "Text Color info"
@@ -85,9 +91,9 @@
 					"type": "string",
 					"description": "Background color info"
 				}
-			],
-			"body": "this.value = newValue; this.info = newInfo; this.color = newColor; this.bgcolor = newBgcolor;"
-		},
+            ],
+            "body": "this.color = newColor; this.bgcolor = newBgcolor;"
+        },
 		"getValue": {
 			"returnType": "number",
 			"description": "Returns the Gauge value.",
