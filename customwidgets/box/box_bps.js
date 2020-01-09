@@ -40,11 +40,11 @@
 			}));
 		}
 
-		set color(newBgcolor) {
+		set bgcolor(newBgcolor) {
 			this._shadowRoot.getElementById("bps_color").value = newBgcolor;
 		}
 
-		get color() {
+		get bgcolor() {
 			return this._shadowRoot.getElementById("bps_color").value;
 		}
 	}
