@@ -46,7 +46,12 @@
 			"type": "string",
 			"description": "Text Color info",
 			"default": "#3498db"
-		},
+        },
+        "bgcolor": {
+			"type": "string",
+			"description": "Background Color info",
+			"default": "#3498db"
+        },
 		"width": {
 			"type": "integer",
 			"default": 100
@@ -74,9 +79,14 @@
 					"name": "newColor",
 					"type": "string",
 					"description": "Text Color info"
+				},
+				{
+					"name": "newBgcolor",
+					"type": "string",
+					"description": "Background color info"
 				}
 			],
-			"body": "this.value = newValue; this.info = newInfo; this.color = newColor;"
+			"body": "this.value = newValue; this.info = newInfo; this.color = newColor; this.bgcolor = newBgcolor;"
 		},
 		"getValue": {
 			"returnType": "number",

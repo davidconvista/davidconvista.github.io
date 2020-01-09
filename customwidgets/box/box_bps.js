@@ -6,7 +6,7 @@
 				<legend>Color Properties</legend>
 				<table>
 					<tr>
-						<td>Color</td>
+						<td>Background Color</td>
 						<td><input id="bps_color" type="text" size="10" maxlength="10"></td>
 					</tr>
 				</table>
@@ -34,14 +34,14 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							color: this.color
+							bgcolor: this.bgcolor
 						}
 					}
 			}));
 		}
 
-		set color(newColor) {
-			this._shadowRoot.getElementById("bps_color").value = newColor;
+		set color(newBgcolor) {
+			this._shadowRoot.getElementById("bps_color").value = newBgcolor;
 		}
 
 		get color() {
