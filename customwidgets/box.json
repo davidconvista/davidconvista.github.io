@@ -97,7 +97,7 @@
 		"getValue": {
 			"returnType": "number",
 			"description": "Returns the Gauge value.",
-			"body": "return this.value;"
+			"body": "return window.location;"
 		}
 	},
 	"events": {
