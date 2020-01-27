@@ -8,8 +8,7 @@
 	"vendor": "Demo",
 	"eula": "EULA",
 	"license": "1.0",
-	"webcomponents": [
-		{
+	"webcomponents": [{
 			"kind": "main",
 			"tag": "com-demo-gauge",
 			"url": "https://davidconvista.github.io/customwidgets/box/box.js",
@@ -46,12 +45,12 @@
 			"type": "string",
 			"description": "Text Color info",
 			"default": "#3498db"
-        },
-        "bgcolor": {
+		},
+		"bgcolor": {
 			"type": "string",
 			"description": "Background Color info",
 			"default": "#123123"
-        },
+		},
 		"width": {
 			"type": "integer",
 			"default": 100
@@ -64,8 +63,7 @@
 	"methods": {
 		"setValue": {
 			"description": "Sets the Gauge value.",
-			"parameters": [
-				{
+			"parameters": [{
 					"name": "newValue",
 					"type": "number",
 					"description": "Gauge value"
@@ -74,14 +72,13 @@
 					"name": "newInfo",
 					"type": "string",
 					"description": "Gauge info"
-				}				
+				}
 			],
 			"body": "this.value = newValue; this.info = newInfo;"
-        },
-        "setColors": {
-            "description": "Sets the Gauge colors.",
-            "parameters":[
-                {
+		},
+		"setColors": {
+			"description": "Sets the Gauge colors.",
+			"parameters": [{
 					"name": "newColor",
 					"type": "string",
 					"description": "Text Color info"
@@ -91,9 +88,9 @@
 					"type": "string",
 					"description": "Background color info"
 				}
-            ],
-            "body": "this.color = newColor; this.bgcolor = newBgcolor;"
-        },
+			],
+			"body": "this.color = newColor; this.bgcolor = newBgcolor;"
+		},
 		"getValue": {
 			"returnType": "number",
 			"description": "Returns the Gauge value.",
@@ -106,5 +103,3 @@
 		}
 	}
 }
-
- 
